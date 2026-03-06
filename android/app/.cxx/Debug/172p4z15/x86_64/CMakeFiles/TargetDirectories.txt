@@ -1,0 +1,6 @@
+/Users/techcapanicus/Documents/Web-Projects/music-ai/MusicAI/android/app/.cxx/Debug/172p4z15/x86_64/CMakeFiles/appmodules.dir
+/Users/techcapanicus/Documents/Web-Projects/music-ai/MusicAI/android/app/.cxx/Debug/172p4z15/x86_64/CMakeFiles/edit_cache.dir
+/Users/techcapanicus/Documents/Web-Projects/music-ai/MusicAI/android/app/.cxx/Debug/172p4z15/x86_64/CMakeFiles/rebuild_cache.dir
+/Users/techcapanicus/Documents/Web-Projects/music-ai/MusicAI/android/app/.cxx/Debug/172p4z15/x86_64/safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir
+/Users/techcapanicus/Documents/Web-Projects/music-ai/MusicAI/android/app/.cxx/Debug/172p4z15/x86_64/safeareacontext_autolinked_build/CMakeFiles/edit_cache.dir
+/Users/techcapanicus/Documents/Web-Projects/music-ai/MusicAI/android/app/.cxx/Debug/172p4z15/x86_64/safeareacontext_autolinked_build/CMakeFiles/rebuild_cache.dir

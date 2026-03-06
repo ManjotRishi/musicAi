@@ -1,0 +1,4 @@
+/Users/techcapanicus/Documents/Web-Projects/music-ai/MusicAI/android/app/.cxx/Debug/172p4z15/x86/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir
+/Users/techcapanicus/Documents/Web-Projects/music-ai/MusicAI/android/app/.cxx/Debug/172p4z15/x86/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir
+/Users/techcapanicus/Documents/Web-Projects/music-ai/MusicAI/android/app/.cxx/Debug/172p4z15/x86/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/edit_cache.dir
+/Users/techcapanicus/Documents/Web-Projects/music-ai/MusicAI/android/app/.cxx/Debug/172p4z15/x86/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/rebuild_cache.dir
