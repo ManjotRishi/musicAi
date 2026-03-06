@@ -65,7 +65,7 @@ yarn-error.log
 # IDE
 .vscode/
 .idea/
-
+android
 # Fastlane
 fastlane/report.xml
 fastlane/Preview.html
