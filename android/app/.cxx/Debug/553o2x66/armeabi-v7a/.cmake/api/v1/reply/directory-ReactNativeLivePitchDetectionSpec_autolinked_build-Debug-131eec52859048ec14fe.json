@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "ReactNativeLivePitchDetectionSpec_autolinked_build",
+		"source" : "/Users/techcapanicus/Documents/Web-Projects/musicAi/node_modules/@techoptio/react-native-live-pitch-detection/android/build/generated/source/codegen/jni"
+	}
+}

@@ -2,8 +2,9 @@ import React from 'react';
 import { I18nManager } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigatingScreens } from '../utils/constant';
-import Splash from '../animations/Splash.js';
 import Home from '../pages/Home';
+import Splash from '../animations/Splash';
+import SwarRiyaz from '../pages/SwarRiyaz';
 
 const Stack = createNativeStackNavigator();
 
@@ -30,6 +31,7 @@ const StackNavigator = () => {
       }}
     >
       <Stack.Screen name={NavigatingScreens.Splash} component={Splash} />
+
       <Stack.Screen
         name={NavigatingScreens.Home}
         component={Home}
@@ -37,6 +39,8 @@ const StackNavigator = () => {
           headerTitleStyle: { textAlign: 'center' },
         }}
       />
+      <Stack.Screen name={NavigatingScreens.SwarRiyaz} component={SwarRiyaz} />
+
     </Stack.Navigator>
   );
 };

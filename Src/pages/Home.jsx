@@ -1,45 +1,63 @@
-import React from 'react';
-import { ImageBackground, StyleSheet, Text, View } from 'react-native';
-import { useAppTheme } from '../styles/theme';
+import React, { useEffect } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import CustomButton from '../components/CustomButton';
+import ImageWrapper from '../components/ImageWrapper';
+import { NavigatingScreens } from '../utils/constant';
+import Overlay from '../components/OverLay';
+import CustomText from '../components/CustomText';
+import NativeMusicPlayer from '../../specs/NativeMusicPlayer';
+import TestModule from "@techoptio/react-native-live-pitch-detection"
 
-const backgroundImage = require('../assets/background.png');
 
-function Home() {
-    const { theme } = useAppTheme();
+
+function Home({ navigation }) {
+
+    const onPlaySa = () => {
+        alert("ddd")
+        //  console.log(NativeAudioPlayer);
+
+        TestModule.startListening();
+
+        // NativeMusicPlayer.play("incallmanager_ringback");
+    };
+
+
+    TestModule.addListener((data) => {
+        console.log("Received data from native module:", data);
+    });
 
 
     return (
-        <ImageBackground source={backgroundImage} style={styles.background} resizeMode="cover">
-            <View style={styles.overlay}>
-                <Text style={[styles.title, { color: theme.text }]}>Music AI</Text>
-                <Text style={[styles.subtitle, { color: theme.text }]}>
-                    Create and explore music with smart tools
-                </Text>
-            </View>
-        </ImageBackground>
+        <ImageWrapper>
+            <Overlay>
+                <CustomText text="Music AI" />
+                <CustomText text="Learn yourself and learn with accuracy." subTitle />
+                <View style={{ marginTop: 28, paddingHorizontal: 20, gap: 20 }}>
+                    <CustomButton
+                        onPress={() => onPlaySa()}
+                        btnText="Swar Riyaz"
+                        subText="Train your swara recognition"
+                        gradientColors={['#C85CFF', '#4A6CFF']}
+                    />
+
+                    <CustomButton
+                        onPress={() => navigation.navigate(NavigatingScreens.SwarRiyaz)}
+                        btnText="Vowel Riyaz"
+                        subText="vowel for voice training"
+                        gradientColors={['#C85CFF', '#4A6CFF']}
+                    />
+
+                    <CustomButton
+                        onPress={() => navigation.navigate(NavigatingScreens.SwarRiyaz)}
+                        btnText="Voice Modulation"
+                        subText="Melodies ,Aalap ,Taans"
+                        gradientColors={['#C85CFF', '#4A6CFF']}
+                    />
+                </View>
+            </Overlay>
+        </ImageWrapper >
+
     );
 }
-
-const styles = StyleSheet.create({
-    background: {
-        flex: 1,
-    },
-    overlay: {
-        flex: 1,
-        backgroundColor: 'rgba(0, 0, 0, 0.35)',
-        justifyContent: 'center',
-        paddingHorizontal: 24,
-    },
-    title: {
-        fontSize: 40,
-        fontWeight: '700',
-        textAlign: 'center',
-    },
-    subtitle: {
-        marginTop: 8,
-        fontSize: 16,
-        textAlign: 'center',
-    },
-});
 
 export default Home;
